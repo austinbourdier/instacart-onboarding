@@ -2,7 +2,7 @@
     <h1>Welcome to {{ appName }}</h1>
     <p class="lead">{{ appDesc }}</p>
     <div ng-if="!isAuthenticated()" class="btn-group" role="group">
-        <a type="button" class="btn btn-primary btn-lg" ui-sref="apply.basic-information">Apply Now</span></a>
+        <a type="button" class="btn btn-primary btn-lg big-insta-button" ui-sref="apply.basic-information" style='margin-top:2em;'>Apply Now</span></a>
     </div>
     <div class="clearfix"></div>
 </div>
@@ -25,105 +25,6 @@
                     <a ui-sref="apply.basic-information" class="btn btn-default btn-block">Apply now</a>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-8 video-feed pull-right">
-            <div class="categories">
-                <span class="head"></span>
-<!--                 <span ng-if="isAuthenticated()" class="upload pull-right">
-                    <button class="btn btn-primary" ng-click="vm.uploadVideo()">Upload</button>
-                </span> -->
-            </div>
-<!--             <div class="video-inner video-block" ng-repeat="video in vm.videos">
-                <h1 class="video-title">{{video.title}}</h1>
-                <video id="video-{{video.id}}" class="video-js vjs-default-skin" controls preload="auto" width="640" height="480">
-                    <source ng-src={{video.url}} type="video/mp4" />
-                    <source ng-src={{video.url}} type="video/ogg" /> Your browser does not support the video tag.
-                </video>
-            </div> -->
-        </div>
-        <div class="col-sm-4 members pull-left">
-            <div class="categories">
-                <span class="head"></span>
-            </div>
-<!--             <div class="row">
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-                <div class="col-xs-4 temp">
-                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
-                </div>
-            </div> -->
         </div>
     </div>
 </div>
