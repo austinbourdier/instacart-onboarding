@@ -23,7 +23,6 @@
                     basicInformationData: JSON.stringify(vm.currentUser.basicInformationData)
                 })
                 .then(function (application) {
-                    console.log(application)
                     $state.go('apply.background-check', {currentUser: application.data});
                 })
                 .catch(function (err) {
