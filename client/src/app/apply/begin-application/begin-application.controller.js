@@ -16,6 +16,7 @@
         vm.hasError = formsService.hasError;
         vm.showError = formsService.showError;
         vm.canSave = formsService.canSave;
+
         vm.duplicateEmail = false;
 
         function next () {

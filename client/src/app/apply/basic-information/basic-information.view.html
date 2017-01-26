@@ -1,1 +1,48 @@
-<a ng-click='vm.next()'>Next (Background Check)</a>
+<div class="middle-box frontforms" id="signup">
+    <div class="page-header">
+        <h1 style="text-align: center;">Please tell us a little bit about yourself</h1>
+    </div>
+
+    <form class="m-t" role="form" name="basicInformationSignupForm" novalidate>
+
+        <div class="flash-message" ng-if="flash">
+            <div class="alert alert-{{flash.type}}" ng-bind="flash.message"></div>
+        </div>
+
+        <div ng-if="!flash || (flash && flash.type === 'danger')">
+            <h2>Name</h2>
+
+            <div class="m-t" ng-class="{'has-error': vm.hasError(basicInformationSignupForm.firstName)}">
+                <input type="text" name="firstName" id="firstName" class="form-control input-lg" placeholder="First Name" ng-model="vm.currentUser.firstName" required>
+                <span class="help-block" ng-show="vm.showError(basicInformationSignupForm.firstName, 'required')">This field is required</span>
+            </div>
+
+            <div class="m-t" ng-class="{'has-error': vm.hasError(basicInformationSignupForm.lastName)}">
+                <input type="text" name="lastName" id="lastName" class="form-control input-lg" placeholder="Last Name" ng-model="vm.currentUser.lastName" required>
+                <span class="help-block" ng-show="vm.showError(basicInformationSignupForm.lastName, 'required')">This field is required</span>
+            </div>
+
+            <h2>Primary Contact Info</h2>
+
+            <div>
+                <input type="text" name="phone" id="phone" class="form-control input-lg" placeholder="Phone #" mask="(999) 999-9999" ng-model="vm.currentUser.phone">
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary pull-left" ng-disabled="!vm.canSave(basicInformationSignupForm) || isDataLoading" ng-click="vm.next()">Next</button>
+            </div>
+        </div>
+
+    </form>
+
+
+
+    <div class="loadingdata">
+        <div ng-if="isDataLoading">
+            <div class="loadingimage"></div>
+        </div>
+    </div>
+
+</div>
+
+

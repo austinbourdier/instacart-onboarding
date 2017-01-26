@@ -11,6 +11,10 @@
         vm.next = next
         vm.currentUser = $stateParams.currentUser;
 
+        // error handling utility
+        vm.hasError = formsService.hasError;
+        vm.showError = formsService.showError;
+        vm.canSave = formsService.canSave;
 
         function next () {
             applicationRepository.update(vm.currentUser._id, {currentStep: 'apply.background-check'})
