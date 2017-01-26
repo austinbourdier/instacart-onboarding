@@ -18,16 +18,13 @@
 
         <div class="collapse navbar-collapse navbar-main-collapse" ng-class="{'in':!collapsed}" ng-click="collapsed = !collapsed">
             <ul class="nav navbar-nav">
-                <li ng-if="!isAuthenticated()" ng-class="{active: isActive('main.home')}"><a ui-sref="main.home">Home</a></li>
-                <li ng-if="!isAuthenticated()" ng-class="{active: isActive('main.about')}"><a ui-sref="main.about">About</a></li>
-                <li ng-if="!isAuthenticated()" ng-class="{active: isActive('main.contact')}"><a ui-sref="main.contact">Contact</a></li>
-                <li ng-if="isAuthenticated()" ng-class="{active: isActive('main.profile')}"><a ui-sref="main.profile">Profile</a></li>
-                <li ng-if="isAuthenticated()" ng-class="{active: isActive('main.settings')}"><a ui-sref="main.settings">Settings</a></li>
-                <li ng-if="isAuthorized('Admin')" ng-class="{active: isActive('admin')}"><a ui-sref="admin.dashboard">Admin</a></li>
+                <li><a target='_blank' href="https://instacart.com">Instacart Website</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="main.home"><i class="material-icons">home</i> Home</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li ng-if="!isAuthenticated()"><a ui-sref="login"><i class="material-icons">lock_open</i> Log In</a></li>
-                <li ng-if="isAuthenticated()"><a href="#" ng-click="vm.logout()"><i class="material-icons">exit_to_app</i> Log Out</span></li>
+                <li><a ui-sref="funnel">Part Two of Challenge</a></li>
             </ul>
         </div>
     </div>

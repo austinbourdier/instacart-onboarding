@@ -10,9 +10,11 @@
 
         vm.next = next
         vm.currentUser = $stateParams.currentUser;
-        vm.currentUser.basicInformationData = JSON.parse($stateParams.currentUser.basicInformationData);
-
-        vm.stepBack = $stateParams.stepBack || performance.navigation.type === 1;
+        if(vm.currentUser && vm.currentUser.basicInformationData) {
+            vm.currentUser.basicInformationData = JSON.parse(vm.currentUser.basicInformationData);
+        }
+        console.log(performance.navigation)
+        vm.stepBack = $stateParams.stepBack || performance.navigation.type === 0 || performance.navigation.type === 1;
         // error handling utility
         vm.hasError = formsService.hasError;
         vm.showError = formsService.showError;
@@ -22,7 +24,7 @@
         if(vm.stepBack) {
             vm.canSave(basicInformationSignupForm);
             $scope.$watch(angular.bind(this, function () {
-              return this.currentUser.basicInformationData;
+                if(this.currentUser) return this.currentUser.basicInformationData;
             }), function (newVal, oldVal) {
               var equal = angular.equals(newVal, oldVal);
               if(!equal) {

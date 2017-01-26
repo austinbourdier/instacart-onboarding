@@ -31,13 +31,10 @@
             // login
             // apply
             'apply',
+            //'funnel',
+            'funnel',
             // main
             'main',
-            'main.home',
-            'main.contact',
-            'main.about',
-            'main.profile',
-            'main.settings',
-            'main.video-upload'
+            'main.home'
         ]);
 })();
