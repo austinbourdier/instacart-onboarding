@@ -6,6 +6,7 @@
         .controller('BeginApplicationController', BeginApplicationController);
 
     function BeginApplicationController($log, $scope, $state, $stateParams, applicationRepository, $rootScope, authService, Session, REDIRECT, formsService) {
+        angular.element('#background1').css("height", "" + window.screen.height + "px");
         var vm = this;
         vm.next = next;
         // init globals for app wide inheritance
@@ -20,6 +21,7 @@
         vm.duplicateEmail = false;
 
         function next () {
+            console.log(angular.element('#background1'))
             applicationRepository.get(vm.currentUser)
                 .then(function (application) {
                     //Front-end check for no duplication of emails

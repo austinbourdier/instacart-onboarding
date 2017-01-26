@@ -6,6 +6,7 @@
         .controller('BackgroundCheckController', BackgroundCheckController);
 
     function BackgroundCheckController($log, $scope, $state, $stateParams, $rootScope, applicationRepository, authService, Session, REDIRECT) {
+        angular.element('#background3').css("height", "" + window.screen.height + "px");
         var vm = this;
 
         vm.next = next;

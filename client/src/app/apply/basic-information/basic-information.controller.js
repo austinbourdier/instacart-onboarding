@@ -6,6 +6,8 @@
         .controller('BasicInformationController', BasicInformationController);
 
     function BasicInformationController($log, $scope, $state, $stateParams, $rootScope, authService, applicationRepository, formsService, Session, REDIRECT) {
+        angular.element('#background2').css("height", "" + window.outerHeight + "px");
+        console.log(window.screen)
         var vm = this;
 
         vm.next = next

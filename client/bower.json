@@ -46,7 +46,8 @@
     "jquery.flot.spline": "https://raw.githubusercontent.com/AMKohn/flot/master/jquery.flot.spline.js",
     "jquery.flot.resize": "https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.resize.js",
     "videogular": "^1.4.4",
-    "angular-ui-validate": "^1.2.2"
+    "angular-ui-validate": "^1.2.2",
+    "angular-material": "^1.1.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.5.0"

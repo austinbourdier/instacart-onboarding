@@ -1,48 +1,51 @@
-<div class="middle-box frontforms" id="signup" style='width: 790px;max-width:790px;'>
-    <div class="progress"  style="max-width:400px;margin-left: auto;margin-right: auto;margin-bottom:1em;">
-        <div class="progress-bar" role="progressbar" aria-valuenow="75"
-      aria-valuemin="0" aria-valuemax="100" style="width:75%">
-          75%
-      </div>
-    </div>
-    <div class="page-header">
-        <h1 style="text-align: center;">We need to run a background check, but we need your permission first!</h1>
-    </div>
-
-    <form class="m-t" role="form" name="backgroundCheckSignupForm" novalidate>
-
-        <div class="flash-message" ng-if="flash">
-            <div class="alert alert-{{flash.type}}" ng-bind="flash.message"></div>
+<div class="container portrait" id='background3'>
+    <div class="middle-box frontforms" id="background-middle-box" style='width: 790px;max-width:790px;'>
+        <div class="progress"  style="max-width:400px;margin-left: auto;margin-right: auto;margin-bottom:1em;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75"
+          aria-valuemin="0" aria-valuemax="100" style="width:75%">
+              75%
+          </div>
+        </div>
+        <div class="page-header">
+            <h1 style="text-align: center;">We need to run a background check, but we need your permission first!</h1>
         </div>
 
-        <div ng-if="!flash || (flash && flash.type === 'danger')">
+        <form class="m-t" role="form" name="backgroundCheckSignupForm" novalidate>
 
-        <h2>Please read the following and confirm that you agree before continuing</h2>
+            <div class="flash-message" ng-if="flash">
+                <div class="alert alert-{{flash.type}}" ng-bind="flash.message"></div>
+            </div>
 
-        <div class="checkbox checkbox-primary">
-            <input id="checkbox" ng-model='vm.currentUser.backgroundCheckConsentGiven' type="checkbox" checked="false">
-            <label for="checkbox">
-                I consent to having Instacart conduct a thorough background check for the purpose of confirming my status as a potential Instacart Shopper
-            </label>
-        </div>
-        <span class="help-block" ng-show="vm.showConsentError" style='color:#a94442;'>You must give consent to move on with your application!</span>
-        </div>
-            <div class="form-actions">
-                <button type="submit" class="btn btn-primary pull-left" ng-click="vm.next()">Next</button>
-                <button class="btn btn-danger pull-left" ng-click="vm.back()">Back</button>
+            <div ng-if="!flash || (flash && flash.type === 'danger')">
+
+            <h2>Please read the following and confirm that you agree before continuing</h2>
+
+            <div class="checkbox checkbox-primary">
+                <input id="checkbox" ng-model='vm.currentUser.backgroundCheckConsentGiven' type="checkbox" checked="false">
+                <label for="checkbox">
+                    I consent to having Instacart conduct a thorough background check for the purpose of confirming my status as a potential Instacart Shopper
+                </label>
+            </div>
+            <span class="help-block" ng-show="vm.showConsentError" style='color:#a94442;'>You must give consent to move on with your application!</span>
+            </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary pull-left" ng-click="vm.next()">Next</button>
+                    <button class="btn btn-danger pull-left" ng-click="vm.back()">Back</button>
+                </div>
+            </div>
+
+        </form>
+
+
+
+        <div class="loadingdata">
+            <div ng-if="isDataLoading">
+                <div class="loadingimage"></div>
             </div>
         </div>
 
-    </form>
-
-
-
-    <div class="loadingdata">
-        <div ng-if="isDataLoading">
-            <div class="loadingimage"></div>
-        </div>
     </div>
-
 </div>
+
 
 

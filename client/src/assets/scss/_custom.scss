@@ -623,3 +623,120 @@ body.mini-navbar .statusbar-block .row {
   font-size: 24px;
   font-weight: 400;
 }
+
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.container img {
+    display: block;
+}
+
+.portrait img {
+    width: 100%;
+}
+.landscape img {
+    height: 100%;
+}
+
+#background1 {
+  background: url("/assets/images/instacart.jpg") no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:fixed; right:0px; bottom:0px;
+}
+
+
+#begin-middle-box {
+  margin-top: 300px;
+  background-color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 600px;
+  max-width: 600px;
+}
+
+
+#basic-middle-box {
+  margin-top: 200px;
+  background-color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 600px;
+  max-width: 600px;
+}
+
+
+#background-middle-box {
+  margin-top: 100px;
+  background-color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 600px;
+  max-width: 600px;
+}
+
+#confirmed-middle-box {
+  margin-top: 200px;
+  background-color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 600px;
+  max-width: 600px;
+}
+
+.confirmed-jumbotron {
+  margin-top: 150px;
+}
+
+#background2 {
+  background: url("/assets/images/instacart2.jpg") no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:fixed; right:0px; bottom:0px;
+  margin-top:53px;
+}
+
+#background3 {
+  background: url("/assets/images/instacart3.jpg") no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#background4 {
+  background: url("/assets/images/instacart4.jpg") no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
