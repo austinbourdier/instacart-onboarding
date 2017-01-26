@@ -39,7 +39,8 @@
                 controllerAs: 'vm',
                 title: 'Basic Information',
                 params: {
-                    'currentUser': null
+                    'currentUser': null,
+                    'stepBack': false
                 }
             })
 

@@ -36,7 +36,7 @@
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="btn btn-primary pull-left" ng-disabled="!vm.canSave(basicInformationSignupForm) || isDataLoading" ng-click="vm.next()">Next</button>
+                <button type="submit" class="btn btn-primary pull-left" ng-disabled="(!vm.canSave(basicInformationSignupForm) || isDataLoading) && !vm.stepBack" ng-click="vm.next()">Next</button>
             </div>
         </div>
 
