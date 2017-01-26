@@ -1,0 +1,129 @@
+<div class="jumbotron">
+    <h1>Welcome to {{ appName }}</h1>
+    <p class="lead">{{ appDesc }}</p>
+    <div ng-if="!isAuthenticated()" class="btn-group" role="group">
+        <a type="button" class="btn btn-primary btn-lg" ui-sref="apply.basic-information">Apply Now</span></a>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="container">
+    <div ng-if="!isAuthenticated()" class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Learn More about Instacart</h3>
+                    <p>Instacart brings groceries to your door in under an hour</p>
+                    <a target="_blank" href='https://instacart.com' class="btn btn-default btn-block">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Become an Instacart Shopper today</h3>
+                    <p>Join our team and become part of a new solution to grocery shopping</p>
+                    <a ui-sref="apply.basic-information" class="btn btn-default btn-block">Apply now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 video-feed pull-right">
+            <div class="categories">
+                <span class="head"></span>
+<!--                 <span ng-if="isAuthenticated()" class="upload pull-right">
+                    <button class="btn btn-primary" ng-click="vm.uploadVideo()">Upload</button>
+                </span> -->
+            </div>
+<!--             <div class="video-inner video-block" ng-repeat="video in vm.videos">
+                <h1 class="video-title">{{video.title}}</h1>
+                <video id="video-{{video.id}}" class="video-js vjs-default-skin" controls preload="auto" width="640" height="480">
+                    <source ng-src={{video.url}} type="video/mp4" />
+                    <source ng-src={{video.url}} type="video/ogg" /> Your browser does not support the video tag.
+                </video>
+            </div> -->
+        </div>
+        <div class="col-sm-4 members pull-left">
+            <div class="categories">
+                <span class="head"></span>
+            </div>
+<!--             <div class="row">
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+                <div class="col-xs-4 temp">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object img-responsive">
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>

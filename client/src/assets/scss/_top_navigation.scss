@@ -1,0 +1,232 @@
+.top-navigation #page-wrapper {
+  margin-left: 0;
+}
+
+.top-navigation .navbar-nav .dropdown-menu > .active > a {
+  background: white;
+  color: $color-primary;
+  font-weight: bold;
+}
+
+
+.white-bg .navbar-fixed-top, .white-bg .navbar-static-top {
+  background: #fff;
+}
+
+.top-navigation .navbar {
+  margin-bottom: 0;
+}
+
+.top-navigation .nav > li > a {
+  padding: 15px 20px;
+  font-weight: 500;
+
+}
+
+.top-navigation .nav > li a:hover, .top-navigation .nav > li a:focus {
+  background: $row-hover;
+}
+
+.top-navigation .nav > li.active {
+  background: #fff;
+  border: none;
+}
+
+.top-navigation .navbar-right {
+  margin-right: 0px;
+}
+
+.top-navigation .dropdown-menu > li > a {
+  margin: 0;
+  padding: 7px 20px;
+}
+
+.top-navigation .navbar-brand {
+  background: $color-primary;
+  color: #fff;
+  padding: 15px 25px;
+}
+
+.top-navigation .navbar-top-links li:last-child {
+  margin-right: 0;
+  float: right;
+}
+
+.top-navigation.mini-navbar #page-wrapper,
+.top-navigation.body-small.fixed-sidebar.mini-navbar #page-wrapper,
+.mini-navbar .top-navigation #page-wrapper,
+.body-small.fixed-sidebar.mini-navbar .top-navigation #page-wrapper,
+.canvas-menu #page-wrapper {
+  margin: 0;
+}
+
+.top-navigation.fixed-nav #wrapper, .fixed-nav #wrapper.top-navigation {
+  margin-top: 50px;
+}
+
+.top-navigation .footer.fixed {
+  margin-left: 0 !important;
+}
+
+.top-navigation .wrapper.wrapper-content {
+  padding: 40px;
+}
+.top-navigation.body-small .wrapper.wrapper-content, .body-small  .top-navigation .wrapper.wrapper-content {
+  padding: 40px 0px 40px 0px;
+}
+
+.navbar-toggle {
+  background-color: $color-primary;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.top-navigation .nav > li > a.dropdown-toggle img {
+    margin-right: 3px;
+    max-width: 30px;
+    display: inline-block !important;
+}
+
+.top-navigation .navbar-nav .open .dropdown-menu > li > a, .top-navigation .navbar-nav .open .dropdown-menu .dropdown-header {
+  padding: 10px 15px 10px 20px;
+}
+
+.top-navigation .items-left {
+  height: 100%;
+  display: block;
+}
+
+.top-navigation .page-title {
+  float: left;
+  display: inline-block;
+  color: $text-color; 
+  font-size: 26px; 
+  margin-left: 25px; 
+  margin-top: 10px;
+  font-weight: 500;
+  width: 100px;
+  text-align: left;
+}
+
+/** CUSTOM DROPDOWNS **/
+
+
+.dropdown-group {
+  float: right;
+}
+
+// profile/uesr button
+.top-navigation .dropdown-toggle.btn-user {
+  padding: 14px 20px;
+  float: right;
+}
+
+// notification button
+.top-navigation .dropdown-toggle.btn-notifications {
+  padding: 17px 20px;
+}
+
+// add button
+.top-navigation .dropdown-toggle.btn-add {
+  display: inline-block; 
+  padding: 15px 20px;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  background-color: $nav-bg;
+}
+.top-navigation .dropdown-toggle.btn-add:hover {
+    background-color: lighten($nav-bg, 7%);    
+    color: #fff;
+}
+.top-navigation .dropdown-toggle.btn-add:hover > i {
+  color: #fff;
+}
+.top-navigation .dropdown-toggle.btn-add .add-icon {
+  font-size: 25px;
+}
+
+
+// dropdown menu
+.dropdown-group .dropdown-menu {
+  margin: 12px 20px 0 0;
+}
+.dropdown-group .dropdown-menu > li > a {
+  padding: 10px 30px 10px 20px;
+}
+
+.uib-dropdown-menu {
+  border-top-color: #243342;
+  border-top: 4px solid #243342;
+
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+.uib-dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #243342;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -13px;
+    right: 11px;
+    z-index: 10;
+    overflow: hidden;
+}
+.uib-dropdown-menu:after {
+    content: "";
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 14px;
+    z-index: 9;
+}
+.uib-dropdown-menu li {
+  border-top: 1px solid #f1f1f1;
+}
+.uib-dropdown-menu .nav-icon i {
+  color: $text-color;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar-left {
+    display: block;
+    float: left;
+  }
+
+}
+
+.menu-visible-lg, .menu-visible-md {
+  display: none !important;
+}
+
+@media (min-width: 1200px) {
+  .menu-visible-lg {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) {
+  .menu-visible-md {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-visible-md {
+    display: block !important;
+  }
+  .menu-visible-lg {
+    display: block !important;
+  }
+}

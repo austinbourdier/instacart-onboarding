@@ -1,0 +1,31 @@
+# OSX files
+*.DS_Store
+
+# webstorm files
+.idea/
+
+# dependencies
+node_modules/
+bower_components/
+
+# dist
+dist/
+dist.zip
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# temp
+.tmp/
+
+# aws keys
+aws-deploy.json
+
+# server.config
+src/config/server.config.js
+src/config/server.config.prod.js
+
+# Config Files
+.env

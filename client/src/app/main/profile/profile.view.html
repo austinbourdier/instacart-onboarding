@@ -1,0 +1,38 @@
+<div class="container" id="profile">
+    <div class="page-header">
+        <h1>Profile</h1>
+    </div>
+
+    <div class="media">
+        <div class="profile-view">
+            <div class="profile-image">
+                <a href="#" class="pull-left">
+                    <img src="/assets/images/profile-placeholder.png" class="media-object">
+                </a>
+            </div>
+            <div ng-show="!vm.isDataLoading" class="profile-meta">
+                <h4 class="profile-heading">
+                    {{vm.profileInfo.name.first}} {{vm.profileInfo.name.last}}
+                </h4>
+                <p class="profile-email">@ {{vm.profileInfo.user.email}}</p>
+                <p class="profile-follows">122 Followers &nbsp;&nbsp;&nbsp;&nbsp; 30 Following</p>
+                <p>Te illum facilisi ut lectores litterarum. Lius modo doming formas claritatem decima. Et vel consectetuer velit putamus claritas.</p>
+            </div>
+            <div ng-show="vm.isDataLoading">
+                Loading...
+            </div>
+        </div>
+
+        <div class="col-xs-8 video-feed">
+            <div class="video-inner video-block" ng-repeat="video in vm.videos">
+                <h1 class="video-title">{{video.title}}</h1>
+                <video id="video-{{video.id}}" class="video-js vjs-default-skin" controls preload="auto" width="640" height="480">
+                    <source ng-src={{video.url}} type="video/mp4" />
+                    <source ng-src={{video.url}} type="video/ogg" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+</div>

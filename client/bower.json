@@ -1,0 +1,80 @@
+{
+  "name": "Instacart Onboarding",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular-animate": "~1.5.0",
+    "angular-cookies": "~1.5.0",
+    "angular-touch": "~1.5.0",
+    "angular-sanitize": "~1.5.0",
+    "angular-messages": "~1.5.0",
+    "jquery": "~2.1.4",
+    "angular-resource": "~1.5.0",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.6",
+    "bootstrap-sass": "~3.3.5",
+    "moment": "~2.10.6",
+    "animate.css": "~3.4.0",
+    "angular": "~1.5.0",
+    "pace": "~1.0.2",
+    "metisMenu": "~2.0.2",
+    "fontawesome": "~4.5.0",
+    "slimScroll": "slimscroll#^1.3.7",
+    "angular-local-storage": "^0.2.5",
+    "angular-motion": "^0.4.3",
+    "angular-xeditable": "^0.1.10",
+    "angular-slimscroll": "^1.1.5",
+    "ngAutocomplete": "^1.0.0",
+    "angular-chosen-localytics": "^1.3.0",
+    "lodash": "^4.6.1",
+    "ngMask": "angular-mask#^3.0.16",
+    "angular-ui-switch": "^0.1.1",
+    "angular-ui-select3": "ui-select#*",
+    "jquery.inputmask": "^3.2.7",
+    "json3": "^3.3.0",
+    "angular-ui-notification": "^0.2.0",
+    "pace-ng-file-upload-inlinepatch": "^0.0.6",
+    "ng-file-upload": "^12.2.12",
+    "video.js": "^5.12.6",
+    "angular-encode-uri": "^1.0.0",
+    "angular-breadcrumb": "^0.4.1",
+    "angular-strap": "^2.3.10",
+    "angular-bootstrap": "^2.2.0",
+    "angular-smart-table": "^2.1.8",
+    "jquery.sparkline": "http://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.js",
+    "angular-flot": "~0.0.5",
+    "flot.curvedlines": "*",
+    "jquery.flot.spline": "https://raw.githubusercontent.com/AMKohn/flot/master/jquery.flot.spline.js",
+    "jquery.flot.resize": "https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.resize.js",
+    "videogular": "^1.4.4",
+    "angular-ui-validate": "^1.2.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.0"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "fontawesome": {
+      "main": [
+        "scss/font-awesome.scss",
+        "fonts/fontawesome-webfont.eot",
+        "fonts/fontawesome-webfont.svg",
+        "fonts/fontawesome-webfont.ttf",
+        "fonts/fontawesome-webfont.woff",
+        "fonts/fontawesome-webfont.woff2"
+      ]
+    }
+  },
+  "resolutions": {
+    "jquery": "~2.1.4",
+    "angular": "~1.5.0"
+  }
+}

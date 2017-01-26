@@ -1,0 +1,304 @@
+
+/* =============================================================================
+   PANEL : ADD
+   ========================================================================== */
+
+.admin.view .aside-heading {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  border: 0;
+}
+.admin.view .panel-heading {
+  padding: 10px 20px;
+}
+.panel-default > .panel-heading {
+    color: inherit;
+    background-color: #f5f5f5;
+    border: 0;
+}
+.admin.view .panel-heading.name h2 {
+  display: inline;
+  margin-left: 1px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.admin.view .aside-btn {
+  display: inline;
+  cursor: pointer;
+  color: white;
+  margin-left: 3px;
+}
+.admin.view .aside-content {
+  height: 100%;
+}
+.admin.view .aside-body {
+  top: 60px;
+  width: 100%;
+  height:100%;
+}
+
+.admin.view .aside-body {
+  padding: 0;
+}
+.admin.view.add .aside-body {
+  padding: 40px 20px 20px 20px;
+}
+
+.admin.view.edit .aside-body {
+  padding-left: 0;
+  padding-right: 0;
+  top: 21px;
+  z-index: 600;
+}
+.admin.view .form-group {
+  margin-bottom: 35px;
+}
+.admin.view .form.edit {
+  padding: 20px;
+}
+
+.aside .aside-dialog {
+  height: 100%;
+}
+.admin.view.edit .aside-footer {
+  margin-left: -35px;
+}
+.aside .aside-dialog .aside-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  border: 0;
+  padding: 15px 0 15px 30px;
+  background-color: #f5f5f5;
+}
+.aside input,
+.aside button {
+  font-size: 15px;
+  text-align: left;
+  &.btn-circle {
+    text-align: center;
+    &.btn-danger {
+      margin-left: 10px;
+    }
+  }
+}
+
+.aside .editable-date input,
+.aside .editable-number input {
+  padding: 0;
+}
+.aside .editable-buttons .btn {
+  padding: 3px;
+  line-height: 1.1;
+}
+.aside .family input {
+  width: 40px;
+}
+
+/** BOX FORMATTING **/
+.admin.view h2 {
+  line-height: 40px;
+  margin-left: 3px;
+}
+
+.admin.view .panel.panel-name {
+  border: 0;
+}
+
+.admin.view .aside-footer .btn {
+  z-index: 20;
+  float: left;
+  margin: 0 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.admin.view .panel-body {
+  padding: 15px;
+}
+.admin.view .panel-name {
+  margin-bottom: 0;
+}
+.admin.view .panel .panel-heading {
+  text-transform: none;
+}
+.admin.view .list-group-item {
+  line-height: 30px;
+}
+
+.admin.view .view-detail {
+  margin-top: 5px;
+}
+.admin.view .view-detail .block {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* =============================================================================
+   PANEL : EDIT
+   ========================================================================== */
+.triptypes {
+  width: 100%;
+  background-color: #eee;
+}
+.dropdown-menu.types {
+  width: auto;
+}
+.triptypes .btn {
+  padding: 8px 25px;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 20px 0 20px 18px;
+  display: inline-block;
+  width: 100%;
+}
+
+.btn-default:active:hover,
+.btn-default:active:focus,
+.btn-default:active.focus,
+.btn-default.active:hover,
+.btn-default.active:focus,
+.btn-default.active.focus,
+.open > .btn-default.dropdown-toggle:hover,
+.open > .btn-default.dropdown-toggle:focus,
+.open > .btn-default.dropdown-toggle.focus {
+  background-color: #e6e6e6;
+  color: $text-color;
+  border: 1px solid transparent;
+
+}
+
+.triptypes .btn:hover, .triptypes .btn:focus, .triptypes .btn:active {
+  background-color: #e6e6e6;
+  color: $text-color;
+  border: 1px solid transparent;
+  width: 100%;
+
+}
+
+.dropdown-menu.triptypes {
+  width: auto;
+}
+
+/** TABS **/
+.admin-tab {
+  padding: 10px 0;
+}
+.admin-tab label {
+  font-weight: normal;
+}
+.admin.view .admin-tab .form-group {
+  margin-bottom: 0;
+}
+
+/** XEDIT **/
+.editable-click, a.editable-click {
+
+}
+.editable-wrap .editable-controls > input, .editable-wrap .editable-controls > select, .editable-wrap .editable-controls > textarea {
+  padding: 0 0 0 5px;
+  margin: -5px;
+  height: 25px;
+  width: 300px;
+
+}
+
+
+
+/* =============================================================================
+   PRODUCTS
+   ========================================================================== */
+.type {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #eee;
+  margin-left: 0px;
+}
+.type .title {
+  margin: 10px 0 0 -15px;
+}
+.switch {
+  margin-top: 4px;
+}
+.switch small {
+  /* button */
+}
+.switch.checked {
+  /* frame when enabled */
+}
+.switch.checked small {
+  /* button when enabled */
+}
+
+
+
+// LOCATION ADD - GOOGLE PLACES
+// autocomplete on top
+.pac-container {
+    z-index: 200000;
+}
+.admin.view.add form  {
+
+}
+.form.add label {
+  font-size: 16px;
+}
+.formatted-address {
+  background-color: #f8f8f8;
+  padding: 15px;
+  color: green;
+  font-size: 15px;
+}
+.info-admin .double {
+  padding: 0 0 0 0;
+}
+
+.admin.view.add select.input-lg {
+  font-size: 15px;
+  line-height: inherit;
+  color: #999;
+}
+
+/* =============================================================================
+   TAB : LOCATION
+   ========================================================================== */
+.tabAdmin {
+  margin-bottom: 60px;
+}
+
+/* =============================================================================
+   TAB : HOURS
+   ========================================================================== */
+.tabHours {
+  padding-bottom: 100px;
+}
+.tabHours .row label {
+  padding: 10px 0 10px 10px;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+.tabHours .day {
+  float: left;
+}
+.tabHours .closed {
+  float: right;
+  padding-right: 10px;
+}
+.tabHours .time-inline {
+  float: left;
+}
+
+.tabHours .time-inline.to {
+  display: block;
+  padding: 25px 20px;
+  font-weight: 500;
+}
+
+// time picker
+.uib-increment,
+.uib-decrement { display: none; }
+
+

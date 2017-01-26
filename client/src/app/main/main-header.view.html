@@ -1,0 +1,34 @@
+<nav class="navbar navbar-custom navbar-fixed-top" topnavcollapse ng-class="{'top-nav-collapse':boolChangeClass}" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" ng-init="collapsed = true" ng-click="collapsed = !collapsed" ng-class="{'collapsed':collapsed}">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-brand">
+                <!--<img class="logo-mark" src="/assets/images/logo-mark.png" />-->
+                <a class="logo-text" title="Home" ng-click="collapsed = true" ui-sref="main.home">
+                {{ appName }}
+                </a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-main-collapse" ng-class="{'in':!collapsed}" ng-click="collapsed = !collapsed">
+            <ul class="nav navbar-nav">
+                <li ng-if="!isAuthenticated()" ng-class="{active: isActive('main.home')}"><a ui-sref="main.home">Home</a></li>
+                <li ng-if="!isAuthenticated()" ng-class="{active: isActive('main.about')}"><a ui-sref="main.about">About</a></li>
+                <li ng-if="!isAuthenticated()" ng-class="{active: isActive('main.contact')}"><a ui-sref="main.contact">Contact</a></li>
+                <li ng-if="isAuthenticated()" ng-class="{active: isActive('main.profile')}"><a ui-sref="main.profile">Profile</a></li>
+                <li ng-if="isAuthenticated()" ng-class="{active: isActive('main.settings')}"><a ui-sref="main.settings">Settings</a></li>
+                <li ng-if="isAuthorized('Admin')" ng-class="{active: isActive('admin')}"><a ui-sref="admin.dashboard">Admin</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-if="!isAuthenticated()"><a ui-sref="login"><i class="material-icons">lock_open</i> Log In</a></li>
+                <li ng-if="isAuthenticated()"><a href="#" ng-click="vm.logout()"><i class="material-icons">exit_to_app</i> Log Out</span></li>
+            </ul>
+        </div>
+    </div>
+</nav>

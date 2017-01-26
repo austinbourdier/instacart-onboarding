@@ -1,0 +1,108 @@
+/* =============================================================================
+   SHARED
+   ========================================================================== */
+.section table tr td {
+  height: 46px;
+  vertical-align: middle;
+  border: none;
+  border-top: 1px solid #efefef;
+}
+.section table tr.active > td {
+  background-color: #eee;
+}
+
+.section .label {
+  width: 80px;
+  height: 20px;
+  display: block;
+  padding: 5px 0 0 0;
+}
+
+/***** LIST *****/
+.list-name {
+  color: inherit;
+}
+
+.list-name:hover {
+  color: inherit;
+}
+
+.list-status {
+  text-align: left;
+}
+
+/***** DETAIL *****/
+.detail-name {
+  float: left;
+  height: 80px;
+}
+.detail-name h1 {
+  font-weight: 300;
+}
+.detail-logo {
+  float: right;
+  height: 80px;
+}
+
+
+/***** DETAIL--TAB--STATUS *****/
+.box-detail .vertical-timeline-content p {
+  margin: 0;
+}
+
+.box-detail .vertical-timeline-icon.gray-bg {
+  color: lighten($text-color, 25px);
+}
+
+
+/***** DETAIL--TAB--INFO *****/
+.box-detail .info {
+  padding-bottom: 10px;
+  clear: both;
+}
+.box-detail .info h3 {
+  margin-bottom: 5px;
+}
+
+/***** DETAIL--TAB--DOCS *****/
+
+
+
+/* =============================================================================
+   CLIENTS
+   ========================================================================== */
+
+
+
+
+
+
+/* =============================================================================
+   PROJECTS
+   ========================================================================== */
+
+
+
+
+
+
+
+/* =============================================================================
+   PERSONNEL
+   ========================================================================== */
+
+
+
+
+
+
+
+/* =============================================================================
+   CONTACTS
+   ========================================================================== */
+
+
+
+
+
+

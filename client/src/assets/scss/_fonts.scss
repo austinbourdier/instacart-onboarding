@@ -1,0 +1,141 @@
+/* =============================================================================
+   AVENIR PRO
+   ========================================================================== */
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('/assets/fonts/hinted-AvenirNextLTPro-Bold.eot');
+  src: local('Avenir Next LT Pro Bold'), local('AvenirNextLTPro-Bold'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Bold.woff2') format('woff2'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Bold.woff') format('woff'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('/assets/fonts/hinted-AvenirNextLTPro-Medium.eot');
+  src: local('Avenir Next LT Pro Medium'), local('AvenirNextLTPro-Medium'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Medium.woff2') format('woff2'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Medium.woff') format('woff'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('/assets/fonts/hinted-AvenirNextLTPro-Light.eot');
+  src: local('Avenir Next LT Pro Light'), local('AvenirNextLTPro-Light'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Light.woff2') format('woff2'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Light.woff') format('woff'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('/assets/fonts/hinted-AvenirNextLTPro-Thin.eot');
+  src: local('Avenir Next LT Pro Thin'), local('AvenirNextLTPro-Thin'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Thin.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Thin.woff2') format('woff2'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Thin.woff') format('woff'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('/assets/fonts/hinted-AvenirNextLTPro-Regular.eot');
+  src: local('Avenir Next LT Pro Regular'), local('AvenirNextLTPro-Regular'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Regular.woff2') format('woff2'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Regular.woff') format('woff'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro Demi';
+  src: url('/assets/fonts/hinted-AvenirNextLTPro-Demi.eot');
+  src: local('Avenir Next LT Pro Demi'), local('AvenirNextLTPro-Demi'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Demi.woff2') format('woff2'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Demi.woff') format('woff'),
+    url('/assets/fonts/hinted-AvenirNextLTPro-Demi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* =============================================================================
+   DELETE ME
+   ========================================================================== */
+
+@font-face {
+  font-family: 'footable';
+  src: url('/assets/fonts/footable.eot');
+  src: url('/assets/fonts/footable.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/footable.woff') format('woff'), url('/assets/fonts/footable.ttf') format('truetype'), url('/assets/fonts/footable.svg#footable') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: 'footable';
+    src: url('/assets/fonts/footable.svg#footable') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+/* =============================================================================
+   GOOGLE MATERIAL ICON FONT
+   ========================================================================== */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url('/assets/fonts/MaterialIcons-Regular.woff2') format('woff2'),
+       url('/assets/fonts/MaterialIcons-Regular.woff') format('woff'),
+       url('/assets/fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+

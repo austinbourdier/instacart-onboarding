@@ -1,0 +1,181 @@
+/* =============================================================================
+   HEADER - NAVBAR
+   ========================================================================== */
+#main .nav > li > a {
+    color: #fff;
+}
+
+#main .navbar-toggle {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+#main .navbar-toggle {
+    padding: 6px 9px;
+    margin-top: 11px;
+}
+
+#main .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+#main .logo-mark {
+    float: left;
+}
+#main .logo-text {
+    font-weight: 500;
+    font-size: 22px;
+    float: left;
+    margin: 4px 10px 0 10px;
+    color: white;
+}
+#main .nav > li > a {
+    padding: 17px 25px 13px 25px;
+}
+
+#main .nav > li > a:hover,
+#main .nav > li > a:focus {
+    background-color: darken(#243342, 7%);
+}
+
+#main .navbar-fixed-top,
+#main .navbar-static-top {
+    background-color: #243342;
+}
+
+/* =============================================================================
+   CONTENT - MAIN
+   ========================================================================== */
+
+#main .jumbotron {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 70px;
+    background-color: $action-bar-bg;
+}
+#main .jumbotron p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#main .jumbotron h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+#main .btn-group > .btn:last-child:not(:first-child),
+#main .btn-group > .dropdown-toggle:not(:first-child) {
+    margin-left: 20px;
+}
+
+#main .panel-body {
+    padding: 25px;
+}
+
+#main .members .row {
+    margin: 0px;
+}
+#main .members .row .temp {
+    margin: 10px 0;
+}
+#main .members .row a {
+    margin: 5px 0;
+}
+
+#main .members img {
+    height: auto;
+    width: 100px;
+    border: 1px solid #e8e8e8;
+    background-color: #efefef;
+}
+
+/* =============================================================================
+   CONTENT - CONTACT
+   ========================================================================== */
+
+#main .page-block {
+    margin: 70px auto 0 auto;
+    float: none;
+}
+#main .media-heading {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+#main .media-body {
+    line-height: 150%;
+}
+#main .media > .pull-left {
+    padding-right: 20px;
+}
+
+/* =============================================================================
+   CONTENT - CATEGORIES
+   ========================================================================== */
+#main .categories {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+#main .categories .head {
+    font-weight: 300;
+}
+#main .categories .type.active {
+    border-bottom: 3px solid $nyc-primary;
+}
+#main .members .categories {
+    margin-bottom: 25px;
+}
+
+/* =============================================================================
+   CONTENT - PROFILE
+   ========================================================================== */
+#profile h4 {
+    margin-bottom: 0px;
+}
+#profile .profile-view {
+    margin: auto;
+    position: relative;
+    height: 250px;
+
+}
+#profile .profile-image  {
+    height: 200px;
+    width: 200px;
+    margin-right: 30px;
+}
+#profile .profile-image img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #e8e8e8;
+    background-color: #efefef;
+}
+#profile .profile-heading  {
+    font-size: 40px;
+}
+#profile .profile-email  {
+
+    font-size: 20px;
+
+}
+#profile .profile-meta  {
+    float: left;
+    width: 400px;
+}
+#profile .profile-follows {
+    margin-top: 20px;
+}
+
+
+/* =============================================================================
+   CONTENT - SETTINGS
+   ========================================================================== */
+#settings label {
+    font-size: 20px;
+    margin: 0 5px 15px 5px;
+}
+
+#settings form {
+    margin: 10px 0 100px 0;
+}
+
+

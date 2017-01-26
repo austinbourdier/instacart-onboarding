@@ -1,0 +1,40 @@
+<div class="middle-box frontforms" id="signup">
+    <div class="page-header">
+        <h1 style="text-align: center;">Let's Get Started</h1>
+    </div>
+
+    <form class="m-t" role="form" name="currentUserForm" ng-submit="vm.next()" novalidate>
+
+        <div class="flash-message" ng-if="flash">
+            <div class="alert alert-{{flash.type}}" ng-bind="flash.message"></div>
+        </div>
+
+        <div ng-if="!flash || (flash && flash.type === 'danger')">
+            <h2>Please enter your email</h2>
+
+            <div class="m-t" ng-class="{'has-error': vm.hasError(currentUserForm.email) || vm.duplicateEmail}">
+                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email address" ng-model="vm.currentUser.email" required>
+                <span class="help-block" ng-show="vm.showError(currentUserForm.email, 'required')">This field is required</span>
+                <span class="help-block" ng-show="vm.showError(currentUserForm.email, 'email')">Please format as an email address</span>
+                <span class="help-block" ng-show="vm.duplicateEmail">This email already exists, please try again.</span>
+            </div>
+
+
+            <div class="form-actions">
+                <button type="submit" ng-disabled='!vm.canSave(currentUserForm)' class="btn btn-primary pull-left" ng-click="vm.next()">Next Step</button>
+            </div>
+        </div>
+
+    </form>
+
+
+
+    <div class="loadingdata">
+        <div ng-if="isDataLoading">
+            <div class="loadingimage"></div>
+        </div>
+    </div>
+
+</div>
+
+

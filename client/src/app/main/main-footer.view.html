@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="footer">
+        <div class="container"><span class="copyright pull-right">&#169; 2016 {{ appName }}</span>
+            <span><a ui-sref="main">Home</a></span>
+            <span ng-if="isAuthenticated()"> | <a href="#" ng-click="vm.logout()">Sign Out</a></span>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+// Basic Colors
+$nyc-primary:        #3498db;    // NYC primary color
+$color-primary:         #2196f3;    // Primary color
+$color-secondary:       #eeeeee;    // secondary color
+$color-default:         #eeeeee;    // Default color
+$color-success:         #5cb85c;    // Success color
+$color-info:            #5bc0de;    // Info color
+$color-yellow:          #f0ad4e;    // Warning color
+$color-red:             #d9534f;    // Danger color
+
+// Various colors
+$text-color:            #626262;    // Body text
+$gray:                  #f7f7f8;    // Background wrapper color
+$light-gray:            #d1dade;    // Default label, badget
+$label-badget-color:    #5e5e5e;
+$light-blue:            #f3f6fb;
+
+// Spiner color and margin
+$spin-color: $color-primary;
+$spin-margin: 0 auto;
+
+
+//Sidebar width
+$sidebar-width: 200px;
+
+// Layout - Navigation
+$nav-text-color:        #fff;
+$nav-top:               #fdfdfe;
+$nav-bg:                #243342;
+$action-bar-bg:         #fafafa;
+
+// Layout - View
+$view-list:             #f7f7f8;
+$view-list-row:         #fdfdfe;
+$view-detail:           #fdfdfe;
+$view-detail-row:       #f7f7f8;
+
+// Boxed layout width
+$boxed-width: 1200px;
+$boxed-backgound: url('patterns/shattered.png');
+
+// Layout - Boxes
+$border-color:          #f2f2f2;    // IBox border
+$ibox-title-bg:         #fdfdfe;    // IBox Background header
+$ibox-content-bg:       #fdfdfe;    // IBox Background content
+
+// Spinners
+$spin-color: $color-primary;
+$spin-margin: 0 auto;
+
+//buttons
+$btn-bg:                #f0f0f0;
+$btn-bg-light:          #FAFAFA;
+$btn-border-color: rgba(0, 0, 0, 0.1);
+$btn-border-radius: 0px;
+
+//Forms
+$form-bg:               #fdfdfe;
+
+// Tables
+$row-hover:             #f1f1f1;
+$selected:              #e6e6e6;
+
+// Panels
+$panel-heads:           #eee;
+
