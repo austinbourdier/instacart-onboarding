@@ -1,1 +1,43 @@
-CONFIRMED!
+<div class="jumbotron">
+    <h1>Congratulations!</h1>
+    <p class="lead">You've finished the application, we'll get back to you shortly!</p>
+    <div class="btn-group" role="group">
+        <a type="button" class="btn btn-primary btn-lg" ui-sref="main.home">Go back to the main page</span></a>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="container">
+    <div ng-if="!isAuthenticated()" class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Learn More about Instacart</h3>
+                    <p>Instacart brings groceries to your door in under an hour</p>
+                    <a target="_blank" href='https://instacart.com' class="btn btn-default btn-block">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Visit the actual Instacart Shopper Applicant page!</h3>
+                    <p>See the real thing in action</p>
+                    <a target="_blank" href="https://shoppers.instacart.com/" class="btn btn-default btn-block">Go!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 video-feed pull-right">
+            <div class="categories">
+                <span class="head"></span>
+            </div>
+        </div>
+        <div class="col-sm-4 members pull-left">
+            <div class="categories">
+                <span class="head"></span>
+            </div>
+
+        </div>
+    </div>
+</div>

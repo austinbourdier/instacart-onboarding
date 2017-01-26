@@ -23,12 +23,11 @@
         //endregion
         /////////////////////////////
 
-
         (function init() {
             if(vm.currentUser) {
                 applicationRepository.get(vm.currentUser)
                     .then(function (application) {
-                        $state.go(application.data[0].currentStep);
+                        $state.go(application.data[0].currentStep, {currentUser: application.data[0]});
                     })
                     .catch(function (err) {
                         console.log(err)

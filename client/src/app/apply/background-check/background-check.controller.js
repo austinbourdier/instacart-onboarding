@@ -10,15 +10,24 @@
 
         vm.next = next;
         vm.currentUser = $stateParams.currentUser;
-        console.log($stateParams)
+        vm.showConsentError = false;
+
         function next () {
-            applicationRepository.update(vm.currentUser._id, {currentStep: 'apply.please-confirm'})
+            if(vm.currentUser.backgroundCheckConsentGiven) {
+                applicationRepository.update(vm.currentUser._id,
+                {
+                    currentStep: 'apply.confirmed',
+                    backgroundCheckConsentGiven: true
+                })
                 .then(function (application) {
-                    $state.go('apply.please-confirm', {currentUser: application.data});
+                    $state.go('apply.confirmed', {currentUser: application.data});
                 })
                 .catch(function (err) {
                     console.log(err)
                 })
+            } else {
+                vm.showConsentError = true;
+            }
         }
     };
 

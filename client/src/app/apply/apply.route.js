@@ -54,24 +54,27 @@
                     'currentUser': null
                 }
             })
-            .state('apply.please-confirm', {
-                parent: 'apply',
-                // url: "/please-confirm",
-                templateUrl: "app/apply/please-confirm/please-confirm.view.html",
-                controller: 'PleaseConfirmController',
-                controllerAs: 'vm',
-                title: 'Please Confirm',
-                params: {
-                    'currentUser': null
-                }
-            })
+            // .state('apply.please-confirm', {
+            //     parent: 'apply',
+            //     // url: "/please-confirm",
+            //     templateUrl: "app/apply/please-confirm/please-confirm.view.html",
+            //     controller: 'PleaseConfirmController',
+            //     controllerAs: 'vm',
+            //     title: 'Please Confirm',
+            //     params: {
+            //         'currentUser': null
+            //     }
+            // })
             .state('apply.confirmed', {
                 parent: 'apply',
                 // url: "/confirmed",
                 templateUrl: "app/apply/confirmed/confirmed.view.html",
                 controller: 'ConfirmedController',
                 controllerAs: 'vm',
-                title: 'Please Confirm'
+                title: 'Thank you!',
+                params: {
+                    'currentUser': null
+                }
             })
 
 

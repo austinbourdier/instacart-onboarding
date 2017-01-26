@@ -17,6 +17,13 @@ module.exports = function (mongoose) {
       default: APPLICATION_STEPS.BASIC_INFO_INITIATED,
       required: true
     },
+    basicInformationData: {
+      type: Types.String
+    },
+    backgroundCheckConsentGiven: {
+      type: Types.Boolean,
+      default: false
+    },
     timeCreated: {
       type: Types.Date
     }
