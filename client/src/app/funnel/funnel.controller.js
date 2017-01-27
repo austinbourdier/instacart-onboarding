@@ -18,7 +18,9 @@
 
         (function init() {
           funnelService.retrieveFunnelData().then(function(response) {
+
             vm.funnelData = response.data;
+            vm.prettyJSON = JSON.stringify(vm.funnelData, undefined, 2);
 
             var series = [{
                 name: 'applied',
@@ -83,6 +85,7 @@
 
             $(function () {
                 Highcharts.chart('funnel-graph', {
+                    width:800,
                     credits: {
                         enabled: false
                     },
