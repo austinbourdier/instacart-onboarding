@@ -12,7 +12,7 @@ gulp.task('serve:local', ['compile:local'], function () {
 gulp.task('serve:development', ['compile:development'], function () {
   gutil.env.env = 'development';
   gutil.log("Environment '%s'", gutil.colors.cyan(gutil.env.env));
-  
+
   return serve('development');
 });
 
@@ -24,6 +24,15 @@ gulp.task('serve:production', ['compile:production'], function () {
 });
 
 var serve = function(env) {
+  console.log(gulp.paths.build + '/app')
+  console.log(gulp.paths.build + '/app')
+  console.log(gulp.paths.build + '/app')
+  console.log(gulp.paths.build + '/app')
+  console.log(gulp.paths.build + '/app')
+  console.log(gulp.paths.build + '/app')
+  console.log(gulp.paths.build + '/app')
+  console.log(gulp.paths.build + '/app')
+  console.log(gulp.paths.build + '/app')
   return nodemon({
     script: gulp.paths.build + '/app',
     ext: 'js',
