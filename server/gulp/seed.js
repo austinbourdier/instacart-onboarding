@@ -72,7 +72,6 @@ gulp.task('seed', [], function() {
 
                             callbackThree()
                         }, function(err, objects) {
-                            console.log('step4')
                             callbackTwo();
                         });
                     } else {
@@ -82,7 +81,6 @@ gulp.task('seed', [], function() {
                     if(err) {
                         console.log(err)
                     } else {
-                        console.log('step3')
                         callbackOne();
                     }
                 })
@@ -96,7 +94,6 @@ gulp.task('seed', [], function() {
                         console.log(error);
                     }
                     console.log(result)
-
                     return gulp.src("").pipe(exit());
                 });
             })

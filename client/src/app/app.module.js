@@ -7,7 +7,6 @@
             'ngTouch',
             'ngSanitize',
             'ngMessages',
-            '720kb.datepicker',
             'ui.router',
             'xeditable',
             'ngMask',

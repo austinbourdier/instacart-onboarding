@@ -24,15 +24,6 @@ gulp.task('serve:production', ['compile:production'], function () {
 });
 
 var serve = function(env) {
-  console.log(gulp.paths.build + '/app')
-  console.log(gulp.paths.build + '/app')
-  console.log(gulp.paths.build + '/app')
-  console.log(gulp.paths.build + '/app')
-  console.log(gulp.paths.build + '/app')
-  console.log(gulp.paths.build + '/app')
-  console.log(gulp.paths.build + '/app')
-  console.log(gulp.paths.build + '/app')
-  console.log(gulp.paths.build + '/app')
   return nodemon({
     script: gulp.paths.build + '/app',
     ext: 'js',

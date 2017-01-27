@@ -25,7 +25,7 @@ config.server.port = 9002;
  * Mongo settings
  * - config.mongo.URI = 'mongodb://localhost/rest_hapi'; (local db, default)
  */
-config.mongo.URI = 'mongodb://localhost/instacart-onboarding';
+config.mongo.URI = 'mongodb://admin:admin@ds033259.mlab.com:33259/instacart-shopper-application';
 
 /**
  * Authentication options:
