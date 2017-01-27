@@ -11,15 +11,14 @@
 
             .state('funnel', {
                 parent: "main",
-                url: "funnel",
+                url: "funnels",
                 templateUrl: "app/funnel/funnel.view.html",
                 controller: 'FunnelController',
                 controllerAs: 'vm',
-                resolve: {
-                    // authenticated: function(authSecurityService) {
-                    //     return authSecurityService.requireAuthenticatedUser();
-                    // }
-                },
+                params: {
+                    'start_date': '2014-12-01',
+                    'end_date': '2014-12-28'
+                }
             })
 
 
