@@ -4,8 +4,7 @@
   "description": "Instacart Onboarding API",
   "scripts": {
     "start": "gulp",
-    "test": "gulp test",
-    "postinstall": "gulp default"
+    "test": "gulp test"
   },
   "engines": {
     "node": "5.0.0",
