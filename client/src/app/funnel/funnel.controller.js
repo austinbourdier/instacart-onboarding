@@ -5,13 +5,24 @@
         .module('funnel')
         .controller('FunnelController', FunnelController);
 
-    function FunnelController($log, $state, $rootScope, applicationRepository, REDIRECT, Session) {
+    function FunnelController($log, $state, $rootScope, applicationRepository, REDIRECT, Session, funnelService) {
 
         var vm = this;
 
-        (function init() {
+        // vm.retrieveFunnelData = function () {
+        //   funnelService.retrieveFunnelData().then(function(response) {
+        //     alert(response)
+        //   })
+        // }
 
+
+        (function init() {
+          funnelService.retrieveFunnelData().then(function(response) {
+            alert(response)
+          })
         })();
+
+
 
     }
 

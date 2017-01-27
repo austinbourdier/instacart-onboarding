@@ -69,6 +69,7 @@
                 FACILITY_ITEM_INCIDENT:'facility-item-incident',
                 FIRST_RESPONDER:       'first-responder',
                 FIRST_RESPONDER_COMPANY:'first-responder-company',
+                FUNNEL:                 'funnel.json',
                 CONTACT:                'contact',
                 LOGIN:                  'user/login',
                 LOGIN_FORGOT:           'user/login/forgot',

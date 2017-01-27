@@ -6,7 +6,7 @@ module.exports = function (mongoose) {
   var modelName = "part2application";
   var Types = mongoose.Schema.Types;
   var Schema = new mongoose.Schema({
-    workflow_state: {
+    workflow_status: {
       type: Types.String
     },
     timeApplied: {
